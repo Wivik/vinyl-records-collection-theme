@@ -8,7 +8,8 @@
 <main class="album-list">
     {{ range .Pages }}
 
-    <section class="album-card" style="background-image: url('{{ .Site.BaseURL }}/{{ if .Params.cover }}{{ .Params.cover }}{{ else }}default.png{{ end }}')">
+    {{ $default_img := resources.Get "img/default.png" }}
+    <section class="album-card" style="background-image: url('{{ if .Params.cover }}{{ .Site.BaseURL }}/{{ .Params.cover }}{{ else }}{{ $default_img.Permalink }}{{ end }}')">
             {{ if .Params.band }}
             <a href="/band/{{ .Params.band | urlize }}" class="album-band">{{ .Params.band }}</a>
             {{ end }}

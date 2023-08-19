@@ -21,7 +21,8 @@
                 {{ if .Params.cover }}
                 <a href="/{{ .Params.cover | urlize }}">
                 {{ end }}
-                <img src="/{{ if .Params.cover }}{{ .Params.cover }}{{ else }}default.png{{ end }}" alt="{{ .Title }}" title="{{ .Title }}" />
+                {{ $default_img := resources.Get "img/default.png" }}
+                <img src="{{ if .Params.cover }}{{ .Site.BaseURL }}/{{ .Params.cover }}{{ else }}{{ $default_img.Permalink }}{{ end }}" alt="{{ .Title }}" title="{{ .Title }}" />
                 {{ if .Params.cover }}
                 </a>
                 {{ end }}
