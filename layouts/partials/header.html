@@ -1,11 +1,10 @@
-<header>
+{{ $background_header := resources.Get "img/back-header.jpg" }}
+<header style="background-image: url('{{ $background_header.Permalink }}');">
     <h1>{{ .Site.Title }}</h1>
     <nav>
-        <ul>
-            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-            <li><a href="band/">Bands</a></li>
-            <li><a href="genres/">Genres</a></li>
-            <li><a href="#">still don't know</a></li>
-        </ul>
+        <a href="{{ .Site.BaseURL }}">Home</a>
+        <a href="band/">Bands</a>
+        <a href="genres/">Genres</a>
+        <a href="#">still don't know</a>
     </nav>
 </header>

@@ -1,7 +1,7 @@
 :root {
 
   /* Set sans-serif & mono fonts */
-  --sans-font: "fira_sansregular", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+  --sans-font: "Droid Sans", Arial, Helvetica, "Helvetica Neue", sans-serif;
   --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 
   /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
@@ -30,6 +30,11 @@
   --disabled: #111;
   --link-genres: #fff;
   --link-color: #0d517e;
+  --header-title-color: #fff;
+  --nav-a-color: #fff;
+  --nav-a-accent-bg: #666;
+  --bg-header-elements: #b4b4b438;
+  --footer-text-color: #fff;
 
 }
 
@@ -48,28 +53,40 @@ body, h1, h2, h3, p, ul, li {
 
 /* Basic styling */
 body {
-  font-family: Arial, sans-serif;
+  color: var(--color);
 }
 
 header {
-  background-color: #333;
-  color: #fff;
   text-align: center;
-  padding: 10px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-nav ul {
-  list-style-type: none;
+header h1 {
+  margin-bottom: 0.5rem;
+  display: block;
+  padding: 0.5rem;
+  color: var(--header-title-color);
+  background-color: var(--bg-header-elements);
 }
 
-nav li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav a {
+nav a:link, a:visited {
   text-decoration: none;
-  color: #fff;
+  color: var(--nav-a-color);
+  display: inline-block;
+  margin: 0.4rem;
+  padding: 0.5rem;
+  border: 1px solid var(--nav-a-color);
+  background-color: var(--bg-header-elements);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: var(--nav-a-accent-bg);
 }
 
 main {
@@ -276,10 +293,18 @@ a.record-band:hover {
 /* footer */
 
 footer {
-  background-color: #333;
-  color: #fff;
+  color: var(--footer-text-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 2rem;
   font-size: smaller;
-
 }
 
+footer a:link, a:visited {
+  color: var(--nav-a-color);
+}
+
+footer a:hover {
+  text-decoration: none;
+}

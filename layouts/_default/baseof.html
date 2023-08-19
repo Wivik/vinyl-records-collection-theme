@@ -15,19 +15,8 @@
         {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
         <title>{{ $title }}</title>
 
-        <style>
-        {{ $woff_police := resources.Get "fonts/firasans-regular-webfont.woff" }}
-        {{ $woff2_police := resources.Get "fonts/firasans-regular-webfont.woff2" }}
-        @font-face {
-            font-family: 'fira_sansregular';
-            src: url('{{ $woff2_police.Permalink }}') format('woff2'),
-                url('{{ $woff_police.Permalink }}') format('woff');
-        }
-        </style>
-        {{ $main_style := resources.Get "css/simple.css" }}
-        {{ $custom_style := resources.Get "css/style.css" }}
-        {{- /* <link rel="stylesheet" href="{{ $main_style.Permalink }}" />  */ -}}
-        <link rel="stylesheet" href="{{ $custom_style.Permalink }}" />
+        {{ $css := resources.Get "css/style.css" }}
+        <link rel="stylesheet" href="{{ $css.Permalink }}" />
     </head>
     <body>
     <!-- Begin page content -->

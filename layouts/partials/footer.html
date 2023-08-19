@@ -1,3 +1,4 @@
-<footer>
-    <p>&copy; 2023 {{ .Site.Title }} - Using Hugo theme Vinyl Records Library</p>
+{{ $background_footer := resources.Get "img/back-footer.jpg" }}
+<footer style="background-image: url('{{ $background_footer.Permalink }}');">
+    <p>&copy; 2023 {{ .Site.Title }} - Using Hugo theme <a href="https://github.com/Wivik/vinyl-records-collection-theme" target="_blank">Vinyl Records Library</a></p>
 </footer>
