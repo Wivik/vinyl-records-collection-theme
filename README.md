@@ -118,6 +118,10 @@ cover:
 
 ```
 
+## Documentation
+
+The most comprehensive documentation of the support content is directly written in the [archetypes/default.md](archetype).
+
 ## License
 
 Vinyl Records Collection Theme is [licensed under MIT](LICENSE).
