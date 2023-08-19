@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{ .Site.Params.description }}">
+        <meta name="author" content="{{ .Site.Params.author }}">
+        {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+        {{ end -}}
+
+        {{ hugo.Generator }}
+
+        {{ $title := print .Title " · " .Site.Title }}
+        {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+        <title>{{ $title }}</title>
+
+        <style>
+        {{ $woff_police := resources.Get "fonts/firasans-regular-webfont.woff" }}
+        {{ $woff2_police := resources.Get "fonts/firasans-regular-webfont.woff2" }}
+        @font-face {
+            font-family: 'fira_sansregular';
+            src: url('{{ $woff2_police.Permalink }}') format('woff2'),
+                url('{{ $woff_police.Permalink }}') format('woff');
+        }
+        </style>
+        {{ $main_style := resources.Get "css/simple.css" }}
+        {{ $custom_style := resources.Get "css/style.css" }}
+        {{- /* <link rel="stylesheet" href="{{ $main_style.Permalink }}" />  */ -}}
+        <link rel="stylesheet" href="{{ $custom_style.Permalink }}" />
+    </head>
+    <body>
+    <!-- Begin page content -->
+
+    {{- block "main" . }}{{- end }}
+
+    {{- partial "footer.html" . -}}
+    <!-- End page content -->
+    </body>
+</html>
