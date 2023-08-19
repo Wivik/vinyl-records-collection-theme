@@ -4,18 +4,16 @@
 name = "Vinyl Records Collection"
 license = "MIT"
 licenselink = "https://github.com/Wivik/vinyl-records-collection-theme/blob/main/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
+description = "A Theme to display your vinyl records collection, with categories and images."
+homepage = "https://github.com/Wivik/vinyl-records-collection-theme"
+tags = ["collection", "records", "vinyl", "music"]
 features = []
 min_version = "0.116.1"
 
-[author]
-  name = ""
-  homepage = ""
+demosite = "https://vinyl.zedas.fr"
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+[author]
+  name = "Seb"
+  homepage = "https://zedas.fr"
+
+
