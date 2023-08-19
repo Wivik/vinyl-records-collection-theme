@@ -2,9 +2,9 @@
 
 A [Hugo](https://gohugo.io) theme made to present your vinyl records collection to the world.
 
-## Like demo
+## Live demo
 
-https://vinyl.zedas.fr
+WIP
 
 ## Quick start
 
