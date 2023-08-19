@@ -120,7 +120,7 @@ cover:
 
 ## Documentation
 
-The most comprehensive documentation of the support content is directly written in the [archetypes/default.md](archetype).
+The most comprehensive documentation of the support content is directly written in the [archetype](archetypes/default.md).
 
 ## License
 
