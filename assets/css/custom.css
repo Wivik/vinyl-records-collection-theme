@@ -1,0 +1,39 @@
+:root {
+
+    /* Set sans-serif & mono fonts */
+    --sans-font: "Droid Sans", Arial, Helvetica, "Helvetica Neue", sans-serif;
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  
+    /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
+    --base-fontsize: 1.15rem;
+  
+    /* Major third scale progression - see https://type-scale.com/ */
+    --header-scale: 1.25;
+  
+    /* Line height is set to the "Golden ratio" for optimal legibility */
+    --line-height: 1.618;
+  
+    /* Default (light) theme */
+    /* inverted both becase I prefer dark theme by default */
+    --bg: #212121;
+    --bg-transparent: #2f2f2f41;
+    --bg-album-transparent: #2f2f2fe5;
+    --bg-genres: #0d517e;
+    --accent-bg: #2B2B2B;
+    --text: #000000;
+    --text-light: #ABABAB;
+    --border: #666;
+    --accent: #0099ff;
+    --accent-light: #FFECB3;
+    --code: #F06292;
+    --preformatted: #CCC;
+    --disabled: #111;
+    --link-genres: #fff;
+    --link-color: #0d517e;
+    --header-title-color: #fff;
+    --nav-a-color: #fff;
+    --nav-a-accent-bg: #666;
+    --bg-header-elements: #b4b4b438;
+    --footer-text-color: #fff;
+  
+}
