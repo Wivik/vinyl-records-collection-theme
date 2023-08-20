@@ -17,6 +17,8 @@
 
         {{ $css := resources.Get "css/style.css" }}
         <link rel="stylesheet" href="{{ $css.Permalink }}" />
+        {{ $css_custom := resources.Get "css/custom.css" }}
+        <link rel="stylesheet" href="{{ $css_custom.Permalink }}" />
     </head>
     <body>
     <!-- Begin page content -->

@@ -9,9 +9,9 @@
     {{ range .Pages }}
 
     {{ $default_img := resources.Get "img/default.png" }}
-    <section class="album-card" style="background-image: url('{{ if .Params.cover }}{{ .Site.BaseURL }}/{{ .Params.cover }}{{ else }}{{ $default_img.Permalink }}{{ end }}')">
-            {{ if .Params.band }}
-            <a href="/band/{{ .Params.band | urlize }}" class="album-band">{{ .Params.band }}</a>
+    <section class="album-card" style="background-image: url('{{ if .Params.cover }}{{ .Site.BaseURL }}{{ .Params.cover }}{{ else }}{{ $default_img.Permalink }}{{ end }}')">
+            {{ if .Params.artist }}
+            <a href="/artist/{{ .Params.band | urlize }}" class="album-artist">{{ .Params.artist }}</a>
             {{ end }}
             <a href="{{ .Page.Permalink }}" class="album-title">{{ .Title }}</a>
             {{ if .Params.genres }}
@@ -29,13 +29,12 @@
                 <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path></svg> Year : <a href="/year/{{ .Params.year }}" class="album-info">{{ .Params.year }}</a></li>
                 {{ end }}
                 {{ if .Params.format }}
-                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12C15 13.6569 13.6569 15 12 15Z"></path></svg> Format : <a href="/format/{{ .Params.format | urlize }}" class="album-info">{{ .Params.format }}</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 16C14.2133 16 16 14.2133 16 12C16 9.78667 14.2133 8 12 8C9.78667 8 8 9.78667 8 12C8 14.2133 9.78667 16 12 16ZM12 11C12.55 11 13 11.45 13 12C13 12.55 12.55 13 12 13C11.45 13 11 12.55 11 12C11 11.45 11.45 11 12 11Z"></path></svg> Disc format : <a href="/format/{{ .Params.format | urlize }}" class="album-info">{{ .Params.format }}</a> {{ if .Params.number_of_discs }} ({{ .Params.number_of_discs }} discs){{ end }}</li>
                 {{ end }}
             </ul>
     </section>
 
 
     {{ end }}
-
 </main>
 {{ end }}
