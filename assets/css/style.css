@@ -193,7 +193,7 @@ main.album-list {
   }
   .album-card {
     background-position: top;
-    padding-left: 0;
+    padding-left: 0.1rem;
     padding-top: 255px;
     min-height: auto;
   }
@@ -208,6 +208,7 @@ a.album-artist:link, a.album-artist:visited {
   border-bottom: 1px solid black;
   text-transform: uppercase;
   color: var(--link-color);
+  padding-left: 0.1rem;
 }
 
 a.album-artist:hover {
