@@ -4,7 +4,7 @@ A [Hugo](https://gohugo.io) theme made to present your vinyl records collection 
 
 ## Live demo
 
-WIP
+https://vinyl.zedas.fr
 
 ## Quick start
 
