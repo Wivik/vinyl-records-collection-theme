@@ -291,6 +291,10 @@ section.content {
   border: 1px solid var(--border);
 }
 
+section.content p {
+  margin-bottom: 1rem;
+}
+
 a.record-artist:link, a.record-artist:visited {
   text-decoration: none;
   font-size: large;
