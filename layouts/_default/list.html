@@ -9,7 +9,7 @@
     {{ range .Pages }}
 
     {{ $default_img := resources.Get "img/default.png" }}
-    <section class="album-card" style="background-image: url('{{ if .Params.cover }}{{ .Site.BaseURL }}{{ .Params.cover }}{{ else }}{{ $default_img.Permalink }}{{ end }}')">
+    <section class="album-card" style="background-image: url('{{ if .Params.cover }}{{ .Site.BaseURL }}/{{ .Params.cover }}{{ else }}{{ $default_img.Permalink }}{{ end }}')">
             {{ if .Params.artist }}
             <a href="/artist/{{ .Params.band | urlize }}" class="album-artist">{{ .Params.artist }}</a>
             {{ end }}
