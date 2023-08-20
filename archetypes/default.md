@@ -2,7 +2,7 @@
 # Mandatory parts :
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+draft: false
 
 # Optional parts that you still should fill in order to sort your collection
 
