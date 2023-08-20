@@ -122,6 +122,45 @@ cover:
 
 The most comprehensive documentation of the support content is directly written in the [archetype](archetypes/default.md).
 
+## Customize theme
+
+### Custom colors
+
+The CSS file is mostly variabilized and can be overloaded suing a `custom.css` file that will be loaded after the default style.
+
+```bash
+├── assets
+│   └── css
+│       └── custom.css # 2. customize the color there
+└── themes
+    └── vinyl-records-collection-theme
+        ├── assets
+        │   ├── css
+        │   │   ├── custom.css ## 1. copy this file to the site assets folder, in a 'css' sub-folder
+        │   │   └── style.css
+
+```
+
+### Custom images
+
+You can change the background image of the header and the footer, also the default record image, by adding your own one in the site `assets` folder.
+
+```bash
+├── assets
+│   └── img
+│       └── back-header.jpg # will have the priority over the one in the template
+└── themes
+    └── vinyl-records-collection-theme
+        ├── assets
+        │   └── img
+        │       ├── back-footer.jpg
+        │       ├── back-header.jpg
+        │       └── default.png
+
+```
+
+The theme expects the header and footer to be in `jpg` format, while the default record image is expected to be in `png`.
+
 ## License
 
 Vinyl Records Collection Theme is [licensed under MIT](LICENSE).
