@@ -35,8 +35,6 @@ jobs:
 
       - name: Run hugo build
         run: |
-          hugo
-        with:
-          working-directory: samples
+          cd samples && hugo
 
 
