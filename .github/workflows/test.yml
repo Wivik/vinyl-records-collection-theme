@@ -39,6 +39,6 @@ jobs:
 
       - name: Run hugo build
         run: |
-          cd sample && hugo
+          cd sample && hugo >> $GITHUB_STEP_SUMMARY
 
 
