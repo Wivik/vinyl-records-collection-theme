@@ -4,6 +4,8 @@ A [Hugo](https://gohugo.io) theme made to present your vinyl records collection 
 
 [![Theme example](images/tn.jpg)](images/screenshot.jpg)
 
+If this theme has been designed for a vinyl collection, it's also suitable for any other music library with some [customization](#customize-theme).
+
 ## Live demo
 
 https://vinyl.zedas.fr
