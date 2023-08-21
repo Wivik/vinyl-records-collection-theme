@@ -35,7 +35,7 @@ This theme use a specific archetype, so delete or rename the default one.
 rm <your hugo site folder>/archetypes/default.md
 ```
 
-Update the configuration file and add :
+Update the configuration file  :
 
 ```yaml
 baseurl: <your site URL>
@@ -57,6 +57,10 @@ taxonomies:
 Or if you use the Toml format :
 
 ```toml
+baseurl = '<your site URL>'
+languageCode = 'en-us'
+title = 'My Vinyl Records Collection'
+author = '<Your Name>'
 theme = 'vinyl-records-collection-theme'
 
 [taxonomies]
