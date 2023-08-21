@@ -1,10 +1,13 @@
 # Vinyl Records Collection Theme
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Wivik_vinyl-records-collection-theme&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Wivik_vinyl-records-collection-theme)
+
 A [Hugo](https://gohugo.io) theme made to present your vinyl records collection to the world.
 
 [![Theme example](images/tn.jpg)](images/screenshot.jpg)
 
 If this theme has been designed for a vinyl collection, it's also suitable for any other music library with some [customization](#customize-theme).
+
 
 ## Live demo
 
