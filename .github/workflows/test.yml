@@ -1,0 +1,42 @@
+name: Test workflow
+
+on:
+  pull_request:
+    paths-ignore:
+      - '.github/**'
+      - 'sample/**'
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/**'
+      - 'sample/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: sample/themes/
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.110.0'
+
+      - name: Run hugo build
+        run: |
+          hugo
+        with:
+          working-directory: samples
+
+

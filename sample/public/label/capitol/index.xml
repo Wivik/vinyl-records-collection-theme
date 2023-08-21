@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Capitol on My Vinyl Records Collection</title>
+    <link>https://vinyl.zedas.fr/label/capitol/</link>
+    <description>Recent content in Capitol on My Vinyl Records Collection</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Aug 2023 22:34:09 +0200</lastBuildDate><atom:link href="https://vinyl.zedas.fr/label/capitol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>W.A.S.P.</title>
+      <link>https://vinyl.zedas.fr/wasp-wasp/</link>
+      <pubDate>Sun, 20 Aug 2023 22:34:09 +0200</pubDate>
+      
+      <guid>https://vinyl.zedas.fr/wasp-wasp/</guid>
+      <description>This picture album is a German limited edition reissue of the 1984 debut studio album of the american heavy metal band W.A.S.P.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artist on My Vinyl Records Collection</title>
+    <link>https://vinyl.zedas.fr/artist/</link>
+    <description>Recent content in Artist on My Vinyl Records Collection</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Aug 2023 22:57:59 +0200</lastBuildDate><atom:link href="https://vinyl.zedas.fr/artist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cinderella</title>
+      <link>https://vinyl.zedas.fr/artist/cinderella/</link>
+      <pubDate>Sun, 20 Aug 2023 22:57:59 +0200</pubDate>
+      
+      <guid>https://vinyl.zedas.fr/artist/cinderella/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bon Jovi</title>
+      <link>https://vinyl.zedas.fr/artist/bon-jovi/</link>
+      <pubDate>Sun, 20 Aug 2023 22:54:28 +0200</pubDate>
+      
+      <guid>https://vinyl.zedas.fr/artist/bon-jovi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scorpions</title>
+      <link>https://vinyl.zedas.fr/artist/scorpions/</link>
+      <pubDate>Sun, 20 Aug 2023 22:49:18 +0200</pubDate>
+      
+      <guid>https://vinyl.zedas.fr/artist/scorpions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iron Maiden</title>
+      <link>https://vinyl.zedas.fr/artist/iron-maiden/</link>
+      <pubDate>Sun, 20 Aug 2023 21:58:54 +0200</pubDate>
+      
+      <guid>https://vinyl.zedas.fr/artist/iron-maiden/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M83</title>
+      <link>https://vinyl.zedas.fr/artist/m83/</link>
+      <pubDate>Sun, 20 Aug 2023 21:53:44 +0200</pubDate>
+      
+      <guid>https://vinyl.zedas.fr/artist/m83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Daft Punk</title>
+      <link>https://vinyl.zedas.fr/artist/daft-punk/</link>
+      <pubDate>Sun, 20 Aug 2023 21:41:05 +0200</pubDate>
+      
+      <guid>https://vinyl.zedas.fr/artist/daft-punk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Carpenter Brut</title>
+      <link>https://vinyl.zedas.fr/artist/carpenter-brut/</link>
+      <pubDate>Sun, 20 Aug 2023 21:14:27 +0200</pubDate>
+      
+      <guid>https://vinyl.zedas.fr/artist/carpenter-brut/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>W.A.S.P.</title>
+      <link>https://vinyl.zedas.fr/artist/w.a.s.p./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vinyl.zedas.fr/artist/w.a.s.p./</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,328 @@
+:root {
+
+  /* Set sans-serif & mono fonts */
+  --sans-font: "Droid Sans", Arial, Helvetica, "Helvetica Neue", sans-serif;
+  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+  /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
+  --base-fontsize: 1rem;
+
+  /* Major third scale progression - see https://type-scale.com/ */
+  --header-scale: 1.25;
+
+  /* Line height is set to the "Golden ratio" for optimal legibility */
+  --line-height: 1.618;
+
+  /* Default (light) theme */
+  /* inverted both becase I prefer dark theme by default */
+  --bg: #212121;
+  --bg-transparent: #2f2f2f41;
+  --bg-album-transparent: #2f2f2fe5;
+  --bg-genres: #0d517e;
+  --accent-bg: #2B2B2B;
+  --text: #000000;
+  --text-light: #ABABAB;
+  --border: #666;
+  --accent: #0099ff;
+  --accent-light: #FFECB3;
+  --code: #F06292;
+  --preformatted: #CCC;
+  --disabled: #111;
+  --link-genres: #fff;
+  --link-color: #0d517e;
+  --header-title-color: #fff;
+  --nav-a-color: #fff;
+  --nav-a-accent-bg: #666;
+  --bg-header-elements: #b4b4b438;
+  --footer-text-color: #fff;
+  --bg-album-card: #dad9d9;
+
+}
+
+/* main body */
+html {
+  /* Set the font globally */
+  font-family: var(--sans-font);
+  font-size: var(--base-fontsize);
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  color: var(--color);
+}
+
+header {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  display: block;
+  padding: 0.5rem;
+  color: var(--header-title-color);
+  background-color: var(--bg-header-elements);
+}
+
+nav a:link, a:visited {
+  text-decoration: none;
+  color: var(--nav-a-color);
+  display: inline-block;
+  margin: 0.4rem;
+  padding: 0.5rem;
+  border: 1px solid var(--nav-a-color);
+  background-color: var(--bg-header-elements);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: var(--nav-a-accent-bg);
+}
+
+main {
+  padding: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  main {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  main {
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+}
+
+
+/* common */
+
+a.genres:link, a.genres:visited {
+  text-decoration: none;
+  padding: 0.3rem;
+  background-color: var(--bg-genres);
+  color: var(--link-genres);
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 0.1rem;
+}
+
+a.genres:hover {
+  background-color: var(--accent);
+}
+
+a.album-info:link, a.album-info:visited {
+  text-decoration: none;
+  padding: 0.3rem;
+  border: 1px solid var(--bg-genres);
+  border-radius: 5px;
+  color: var(--bg-genres);
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: smaller;
+}
+
+a.album-info:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+ul > li {
+  list-style-type: none;
+  font-size: smaller;
+  margin: 0.1rem;
+}
+
+/* album list page */
+
+main.album-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Create four equal columns */
+.album-card {
+  flex: 25%;
+  /* border: 1px solid black; */
+  min-height: 250px;
+  margin: 0.2rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 250px;
+  padding-left: 255px;
+  padding-top: 0.1rem;
+  padding-right: 0.1rem;
+  padding-bottom: 0.1rem;
+  background-color: var(--bg-album-card);
+  border-radius: 5px;
+}
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .album-card {
+    flex: 50%;
+  }
+
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .album-card {
+    background-position: top;
+    padding-left: 0.1rem;
+    padding-top: 255px;
+    min-height: auto;
+  }
+}
+
+a.album-artist:link, a.album-artist:visited {
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  display: block;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+  color: var(--link-color);
+  padding-left: 0.1rem;
+}
+
+a.album-artist:hover {
+  color: var(--accent)
+}
+
+a.album-title:link, a.album-title:visited {
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  display: block;
+  color: var(--link-color);
+}
+
+a.album-title:hover {
+  color: var(--accent)
+}
+
+p.album-genres {
+  font-size: small;
+  margin: 0.5rem;
+}
+
+
+/* album display page */
+
+section.record {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section.record > div {
+  flex: 25%;
+  margin: 1rem;
+  /* border: 1px solid black; */
+}
+
+section.record > div > p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+section.record > div > ul > li {
+  list-style-type: none;
+}
+
+section.record > div > h1 {
+  border-bottom: 1px solid var(--link-color);
+  margin-bottom: 1rem;
+}
+
+section.record > div > h1.album-title {
+  font-size: xx-large;
+}
+
+section.record img,
+section.record-pictures img {
+  max-width: 250px;
+}
+
+
+section.record-pictures {
+  flex: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+section.record-pictures summary {
+  margin-bottom: 1rem;
+  font-size: larger;
+}
+
+section.content {
+  flex: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border);
+}
+
+section.content p {
+  margin-bottom: 1rem;
+}
+
+a.record-artist:link, a.record-artist:visited {
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  color: var(--link-color);
+}
+
+a.record-artist:hover {
+  color: var(--accent)
+}
+
+/* footer */
+
+footer {
+  color: var(--footer-text-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  font-size: smaller;
+}
+
+footer a:link, a:visited {
+  color: var(--nav-a-color);
+}
+
+footer a:hover {
+  text-decoration: none;
+}
