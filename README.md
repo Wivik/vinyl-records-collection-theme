@@ -64,7 +64,7 @@ author = '<Your Name>'
 theme = 'vinyl-records-collection-theme'
 
 [taxonomies]
-  band = 'band'
+  artist = 'artist'
   genres = 'genres'
   label = 'label'
   year = 'year'
