@@ -179,6 +179,8 @@ The theme expects the header and footer to be in `jpg` format, while the default
 
 Vinyl Records Collection Theme is [licensed under MIT](LICENSE).
 
+Pictures in the `sample/` folder are from https://www.publicdomainpictures.net
+
 ## Maintenance and contribution
 
 This theme is maintained by Seb, the original author.
