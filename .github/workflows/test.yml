@@ -1,6 +1,7 @@
 name: Test workflow
 
 on:
+  dispatch:
   pull_request:
     paths-ignore:
       - '.github/**'
