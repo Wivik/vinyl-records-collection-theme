@@ -36,6 +36,6 @@ jobs:
 
       - name: Run hugo build
         run: |
-          cd samples && hugo
+          cd sample && hugo
 
 
