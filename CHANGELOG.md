@@ -1,4 +1,14 @@
-# 0.1.0 (2023-08-21)
+## [0.1.1](https://github.com/Wivik/vinyl-records-collection-theme/compare/v0.1.0...v0.1.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* opener ([392e6df](https://github.com/Wivik/vinyl-records-collection-theme/commit/392e6df88c55dbeea61b78ba9f51877469261824))
+* removed public ([1689915](https://github.com/Wivik/vinyl-records-collection-theme/commit/1689915d62944dcdb2e1c124f782b5e1059a3646))
+
+
+
+# [0.1.0](https://github.com/Wivik/vinyl-records-collection-theme/compare/edd7b6956dc2e86fca2ddb22a1110c8ddd6cc855...v0.1.0) (2023-08-21)
 
 
 ### Bug Fixes
