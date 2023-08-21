@@ -2,6 +2,8 @@
 
 A [Hugo](https://gohugo.io) theme made to present your vinyl records collection to the world.
 
+[![Theme example](images/tn.jpg)](images/screenshot.jpg)
+
 ## Live demo
 
 https://vinyl.zedas.fr
