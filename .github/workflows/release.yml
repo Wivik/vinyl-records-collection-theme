@@ -1,0 +1,28 @@
+name: Release theme
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Produce release note
+        uses: TriPSs/conventional-changelog-action@v3
+        id: changelog
+        with:
+          github-token: ${{ secrets.github_token }}
+          version-file: './version_file.json'
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v1
+        if: ${{ steps.changelog.outputs.tag }}
+        with:
+          body: ${{ steps.changelog.outputs.clean_changelog }}
+          tag_name: ${{ steps.changelog.outputs.tag }}
