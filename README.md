@@ -38,14 +38,20 @@ rm <your hugo site folder>/archetypes/default.md
 Update the configuration file and add :
 
 ```yaml
+baseurl: <your site URL>
+languageCode: 'en-us'
+title: 'My Vinyl Records Collection'
+author: <Your Name>
 theme: vinyl-records-collection-theme
 
 taxonomies:
-  band: band
+  artist: artist
   genres: genres
   label: label
   year: year
   format: format
+
+
 ```
 
 Or if you use the Toml format :
