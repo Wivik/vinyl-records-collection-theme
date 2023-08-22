@@ -4,7 +4,7 @@
 
 A [Hugo](https://gohugo.io) theme made to present your vinyl records collection to the world.
 
-[![Theme example](images/tn.jpg)](images/screenshot.jpg)
+[![Theme example](/images/tn.jpg)](/images/screenshot.jpg)
 
 If this theme has been designed for a vinyl collection, it's also suitable for any other music library with some [customization](#customize-theme).
 
@@ -137,7 +137,7 @@ cover:
 
 ## Documentation
 
-The most comprehensive documentation of the support content is directly written in the [archetype](archetypes/default.md).
+The most comprehensive documentation of the support content is directly written in the [archetype](/archetypes/default.md).
 
 ## Customize theme
 
@@ -180,7 +180,7 @@ The theme expects the header and footer to be in `jpg` format, while the default
 
 ## License
 
-Vinyl Records Collection Theme is [licensed under MIT](LICENSE).
+Vinyl Records Collection Theme is [licensed under MIT](/LICENSE).
 
 Pictures in the `sample/` folder are from https://www.publicdomainpictures.net
 
