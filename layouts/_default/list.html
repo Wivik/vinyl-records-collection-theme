@@ -6,7 +6,7 @@
 
 
 <main class="album-list">
-    {{ range .Pages }}
+    {{ range sort .Pages "Title" }}
 
     {{ $default_img := resources.Get "img/default.png" }}
     <section class="album-card" style="background-image: url('{{ if .Params.cover }}{{ .Site.BaseURL }}/{{ .Params.cover }}{{ else }}{{ $default_img.Permalink }}{{ end }}')">
