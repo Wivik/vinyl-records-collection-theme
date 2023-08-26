@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/Wivik/vinyl-records-collection-theme/compare/v0.1.1...v0.2.0) (2023-08-26)
+
+
+### Features
+
+* list is now sorted by title ([aee47cc](https://github.com/Wivik/vinyl-records-collection-theme/commit/aee47cceeed71c7f0887b2db864690ffeb976d97))
+
+
+
 ## [0.1.1](https://github.com/Wivik/vinyl-records-collection-theme/compare/v0.1.0...v0.1.1) (2023-08-21)
 
 
