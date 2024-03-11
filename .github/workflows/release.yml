@@ -21,7 +21,7 @@ jobs:
           version-file: './version_file.json'
 
       - name: Publish release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         if: ${{ steps.changelog.outputs.tag }}
         with:
           body: ${{ steps.changelog.outputs.clean_changelog }}
